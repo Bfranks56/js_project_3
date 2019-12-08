@@ -1,4 +1,10 @@
 $(document).ready(function() {
-    let outputCopy = $('naming-info');
-
+    const outputCopy = $('naming-info');
 });
+
+function playerSearch() {
+    let firstName = $('first-name');
+    let lastName = $('last-name');
+
+
+};
