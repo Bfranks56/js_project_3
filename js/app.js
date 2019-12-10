@@ -1,5 +1,7 @@
 $(document).ready(function() {
     const outputCopy = $('#naming-info');
+    const confCopy = $('#conference-info');
+    const teamCopy = $('#team-info');
     let westImage = 'img/logos/west.png';
     let eastImage = 'img/logos/east.png';
 
@@ -32,13 +34,18 @@ $(document).ready(function() {
 
             // ouputs copy
             outputCopy.html(
-                `<h1>${playerFirstName} ${playerLastName}</h1>
-                <p>is in the </p>
-                <img style ="width: 200px;" src="${confImage}">
-                <br><br>
-                <p>Playing for the</p>
-                <img style="width: 200px;" src="img/logos/${data.team.abbreviation}.png">
-                <p>${playerTeam}</p>`)
+                `<h1>${playerFirstName} ${playerLastName}</h1>`);
+
+            confCopy.html(`
+            <p>is in the </p>
+            <img style ="width: 200px;" src="${confImage}">
+            `);
+
+            teamCopy.html(`
+            <p>Playing for the</p>
+            <img style="width: 150px;" src="img/logos/${data.team.abbreviation}.png">
+            `);
+
         });
     });
 });
