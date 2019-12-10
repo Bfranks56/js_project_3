@@ -1,7 +1,42 @@
-/* CONTAINER STYLE */
+/* FONT STYLES */
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Open Sans', sans-serif; */
+
+/* BODY STYLES */
+html, body {
+    background-image: url("../img/background/hardwood.jpg");
+    background-repeat: repeat;
+}
+/* SECTION AND CONTAINER STYLES */
 .container {
+    background-color: #fff;
+    opacity: 95%;
     margin: 0 auto;
     max-width: 1400px;
+    width:80%;
+}
+
+.info{
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.return {
+    height: 100%;
+    min-height: 200px;
+    padding:40px;
+    text-align:center;
+}
+
+/* TEXT STYLES */
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+#naming-info  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 /* IMAGE Styles*/
@@ -12,4 +47,8 @@
 
 #nbaLogo img {
     width:100%;
+}
+
+.slick-arrow {
+    display:none !important;
 }

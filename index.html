@@ -7,22 +7,32 @@
     <title>Bryant Franks Assignment</title>
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
     <script src="js/app.js"></script>
 </head>
 <body>
     <div class="container">
         <img id="nbaLogo" src="img/logos/nba-logo.png"><br></br>
-        <section id="slide-show">
-            <img src="img/slideshow/splash-1.jpg">
-        </section>
 
-            <h1>Enter the Name of your favorite NBA Player</h1>
-            <label>First Name</label>
-            <input type ="text" id="first-name">
-            <label>Last Name</label>
-            <input type ="text" id="last-name">
-        <span id="naming-info"></span>
+        <section class="autoplay">
+                <img src="img/slideshow/splash-1.jpg">
+                <img src="img/slideshow/splash-2.jpg">
+                <img src="img/slideshow/splash-3.jpg">
+                <img src="img/slideshow/splash-4.jpg">
+                <img src="img/slideshow/splash-5.jpg">
+        </section>
+        <section class="info">
+            <h1>CLICK THE BUTTON FOR A RANDOM NBA PLAYER!</h1>
+            <button id="submit-button">Submit!</button>
+        </section>
+        <section class="return">
+            <span id="naming-info"></span>
+        </section>
     </div>
 </body>
 </html>
